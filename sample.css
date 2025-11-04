@@ -1,0 +1,76 @@
+body{
+    background-color:rgb(229, 247, 250) ;
+     backdrop-filter: blur(60px);  
+     margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+}
+  
+.table-data{
+border-collapse: separate;  
+    border-spacing: 0;       
+    width: 60%;
+     background-color:rgb(240, 248, 249) ;
+  
+   
+    border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+td,th{
+    border-bottom: 1px solid rgb(198, 196, 196)
+}
+table{
+    
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    
+}
+
+.add-icon{
+  color:rgb(28, 179, 28);
+}
+  th {
+  
+    padding: 10px;
+    text-align: center;
+  }
+  td{
+    text-align: center;
+    padding:10px;
+  }
+  .icons{
+    color:green;
+    padding:5px;
+     background-color:rgb(240, 248, 249) ;
+     border:none;
+      cursor: pointer;
+  }
+  .delete{
+    color:rgb(140, 25, 25);
+    background-color:rgb(240, 248, 249) ;
+     border:none;
+     cursor: pointer;
+  }
+ .search{
+    margin: 10px;
+    padding: 5px 20px;
+    width: 200px !important;
+    height: 24px;
+    border-radius: 40px;
+    border: none;
+    font-size: medium;
+
+ }
+.add-icon{
+  padding: 10px;
+  font-size: xx-large !important;
+  
+}
+.wrapper{
+  display:flex;
+  justify-content: flex-end;
+}
+

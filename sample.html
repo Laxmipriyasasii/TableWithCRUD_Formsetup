@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sample.css">
+    <script src="sample.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+   <script>
+  function filterTable() {
+  const input = document.getElementById("searchInput");
+  const filter = input.value.toLowerCase();
+  const table = document.getElementById("myTable");
+  const tr = table.getElementsByTagName("tr");
+
+  for (let i = 1; i < tr.length; i++) { 
+    let rowText = tr[i].textContent.toLowerCase();
+    if (rowText.indexOf(filter) > -1) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</head>
+
+<body>
+   
+        <table class="table-data" id="myTable">
+
+        <thead>
+            <tr>
+                <th colspan="4">
+                    Customer Details
+                </th>
+                
+                <th colspan="2">
+                    <div class="wrapper"  style="text-align: right;">
+                        <div><input type="text" class="search" id="searchInput" onkeyup="filterTable()" placeholder="Search">
+                       </div>
+                        <div><a href="form.html"><span class="material-symbols-outlined add-icon">add_circle</span></a></div>
+                    </div>
+                    
+                   </th>
+            </tr>
+
+            <tr>
+                <th>ID</th>
+                <th>first name</th>
+                <th>last name</th>
+                <th>age</th>
+                <th class="hi">full name</th>
+                <th colspan="1">Action</th>
+            </tr>
+        </thead>
+
+
+        <tbody id="customer-body">
+
+        </tbody>
+        
+
+
+    </table>
+  
+    
+</body>
+
+</html>
