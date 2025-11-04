@@ -45,11 +45,5 @@ This is a simple **Customer Management System** built using **HTML**, **CSS**, a
 4. **Search:**
    - Use the search bar to filter the customer list based on input text. It will match any part of the name or age.
 
-## Installation
 
-To run the project locally, you can simply clone the repository and open the `sample.html` file in a web browser. There are no dependencies or external setups required.
-
-1. Clone this repository:
-   ```bash
-   git clone <your-repository-url>
 
